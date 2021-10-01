@@ -1,7 +1,16 @@
-font-family: 'Abril Fatface', cursive;
+body{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 62.5%;
+    color: rgb(36, 34, 32);
+    font-size: 1rem;
+}
+
+h3{
+    text-align: center;
+}
 
 .card{
-    border: 4px solid #232323;
+    border: 50px blueviolet;
 }
 
     
