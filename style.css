@@ -1,17 +1,27 @@
+html,body,*{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body{
     font-family: 'Abril Fatface', cursive;
-    font-size: 62.5%;
     color: rgb(36, 34, 32);
-    font-size: 1rem;
+    font-size: 7rem;
 }
 
 h3{
     text-align: center;
 }
 
-.card{
-    border: 50px blueviolet;
+.img1{
+    height: auto; 
+    width:25rem;
 }
 
-    
+.flexbox{
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+
+}
     
