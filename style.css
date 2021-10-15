@@ -39,4 +39,15 @@ h2{
     background-color: cornsilk;
     text-align: center;
     box-shadow: darkgrey 6px 6px 6px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.card1:hover{
+    transform: scale(1.08);
+}
+
+.card2:hover .flexbox:not(:hover) {
+    transform: scale(0.4);
+    opacity: 0.5;
 }
