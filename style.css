@@ -39,9 +39,10 @@ h2{
     background-color: cornsilk;
     text-align: center;
     box-shadow: darkgrey 6px 6px 6px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    }
+
 
 .card1:hover{
     transform:scale(1.08)
@@ -55,8 +56,8 @@ h2{
     background:rgb(98, 163, 163);
 }
 
-.card4:hover{
-    @-webkit-keyframes .card4 {
+
+@-webkit-keyframes hvr-pulse {
         25% {
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -65,8 +66,9 @@ h2{
           -webkit-transform: scale(0.9);
           transform: scale(0.9);
         }
-      }
-      @keyframes hvr-pulse {
+}
+
+@keyframes hvr-pulse {
         25% {
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -75,15 +77,17 @@ h2{
           -webkit-transform: scale(0.9);
           transform: scale(0.9);
         }
-      }
-      .hvr-pulse {
+}
+.hvr-pulse {
         display: inline-block;
         vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      }
-      .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+      
+}
+
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
         -webkit-animation-name: hvr-pulse;
         animation-name: hvr-pulse;
         -webkit-animation-duration: 1s;
@@ -94,6 +98,72 @@ h2{
         animation-iteration-count: infinite;
       }
       
+
+@-webkit-keyframes hvr-pulse-shrink {
+        to {
+          -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+        }
+}
+
+@keyframes hvr-pulse-shrink {
+        to {
+          -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+        }
+}
+
+.hvr-pulse-shrink {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+      
+.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;    
+  -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+      
+}
+      
+
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 
