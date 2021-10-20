@@ -10,18 +10,38 @@ body{
     font-size: 7rem;
 }
 
-h1{
+.heading{
     text-align: center;
 }
 
-h2{
-    text-align: center;
+.heading-animation{
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
+ 
+
+@keyframes pulse{
+  0% {
+    background: pink;
+    color: rgb(156, 8, 161);
+  }
+
+  50% {
+    background:rgb(156, 8, 161);
+    color:pink;
+  }
+
+  100% {
+    background: pink;
+    color: rgb(156, 8, 161);
+  }
+}
+
+
 .img-all{
     height: auto; 
     width: 50rem;
-    
-    
 }
 
 
@@ -166,6 +186,84 @@ h2{
     animation-iteration-count: 1;
 }
 
-@keyframes title pulse {}
+@media only screen and (max-width: 76em) {
+  body{
+    background-image: url(https://media.istockphoto.com/photos/sand-texture-top-view-on-the-tropical-beach-with-visible-sand-texture-picture-id914134354?k=20&m=914134354&s=170667a&w=0&h=dSFnDpHvqnnQ5PmGoeJmZGTlWZLUc6hCt5iesbwtUrI=);
+   }
+  .heading{
+    font-size: 4rem;
+    background-color: #rgb(253, 202, 234);
+  }
 
+  .subheading {
+    font-size: 3rem;
+    margin: 1.5625rem 1.5625rem;
+  }
 
+  .parent {
+    flex-direction: row;
+    font-size: 2rem;
+  }
+
+  .img-paragraph {
+    font-size: 2rem;
+  }
+
+  .location-box {
+    height: 20%;
+    width: 40%;
+    padding: 0.9375rem;
+    margin: 0.3125rem 0.3125rem;
+    margin-top: 1.875rem;
+    box-shadow: 0.75rem 0.75rem 0.0625rem 0.0625rem #506dd4;
+  }
+  .location-img {
+    padding-left: 10%;
+    width: 90%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    object-position: 50% 50%;
+  }
+}
+
+@media only screen and (max-width: 44em) {
+ body{
+  background-image: url(https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+ }
+  .heading{
+    font-size: 3rem;
+  }
+
+  .subheading {
+    font-size: 2rem;
+    margin: 1.5625rem 1.5625rem;
+  }
+
+  .parent {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .img-paragraph {
+    font-size: 1.5rem
+  }
+
+  .location-box {
+    height: 10%;
+    width: 75%;
+    padding: 0.9375rem;
+    margin: 0.3125rem 0.3125rem;
+    margin-top: 1.875rem;
+    box-shadow: 0.75rem 0.75rem 0.0625rem 0.0625rem #506dd4;
+  }
+
+  .location-img {
+    padding-left: 10%;
+    width: 90%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    object-position: 50% 50%;
+  }
+}
