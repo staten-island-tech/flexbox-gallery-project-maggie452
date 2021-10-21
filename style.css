@@ -12,6 +12,10 @@ body{
 
 .heading{
     text-align: center;
+    border: solid 3px;
+    margin: 5px;
+    margin-left: 62rem;
+    margin-right: 62rem;
 }
 
 .heading-animation{
@@ -24,17 +28,17 @@ body{
 @keyframes pulse{
   0% {
     background: pink;
-    color: rgb(156, 8, 161);
+    color: rgb(72, 87, 226);
   }
 
   50% {
-    background:rgb(156, 8, 161);
+    background: rgb(72, 87, 226);
     color:pink;
   }
 
   100% {
     background: pink;
-    color: rgb(156, 8, 161);
+    color: rgb(72, 87, 226);
   }
 }
 
@@ -187,9 +191,7 @@ body{
 }
 
 @media only screen and (max-width: 76em) {
-  body{
-    background-image: url(https://media.istockphoto.com/photos/sand-texture-top-view-on-the-tropical-beach-with-visible-sand-texture-picture-id914134354?k=20&m=914134354&s=170667a&w=0&h=dSFnDpHvqnnQ5PmGoeJmZGTlWZLUc6hCt5iesbwtUrI=);
-   }
+  
   .heading{
     font-size: 4rem;
     background-color: #rgb(253, 202, 234);
