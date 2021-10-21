@@ -12,10 +12,7 @@ body{
 
 .heading{
     text-align: center;
-    border: solid 3px;
-    margin: 5px;
-    margin-left: 62rem;
-    margin-right: 62rem;
+   
 }
 
 .heading-animation{
@@ -190,36 +187,26 @@ body{
     animation-iteration-count: 1;
 }
 
-@media only screen and (max-width: 76em) {
+@media only screen and (max-width: 1800px) {
   
   .heading{
-    font-size: 4rem;
-    background-color: #rgb(253, 202, 234);
+    font-size: 4rem; 
   }
 
-  .subheading {
-    font-size: 3rem;
-    margin: 1.5625rem 1.5625rem;
-  }
-
-  .parent {
+  .flexbox {
     flex-direction: row;
-    font-size: 2rem;
+    font-size: 10rem;
   }
 
-  .img-paragraph {
-    font-size: 2rem;
+  .card {
+    height: 75%;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.3rem 0.3rem;
+    margin-top: 1.3rem;
+    box-shadow: 0.3rem 0.3rem 0.1rem 0.1rem darkgrey;
   }
-
-  .location-box {
-    height: 20%;
-    width: 40%;
-    padding: 0.9375rem;
-    margin: 0.3125rem 0.3125rem;
-    margin-top: 1.875rem;
-    box-shadow: 0.75rem 0.75rem 0.0625rem 0.0625rem #506dd4;
-  }
-  .location-img {
+  .img-all {
     padding-left: 10%;
     width: 90%;
     height: 30%;
@@ -229,43 +216,30 @@ body{
   }
 }
 
-@media only screen and (max-width: 44em) {
- body{
-  background-image: url(https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
- }
+@media only screen and (max-width:420px){
+
   .heading{
-    font-size: 3rem;
+    font-size: 2.5rem; 
   }
 
-  .subheading {
-    font-size: 2rem;
-    margin: 1.5625rem 1.5625rem;
+  .flexbox {
+    flex-direction: row;
+    font-size: 7.4rem;
   }
 
-  .parent {
-    flex-direction: column;
-    font-size: 1.5rem;
+  .card {
+    height: 200%;
+    width: 300%;
+    margin-top: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.1rem 0.1rem darkgrey;
   }
-
-  .img-paragraph {
-    font-size: 1.5rem
-  }
-
-  .location-box {
-    height: 10%;
-    width: 75%;
-    padding: 0.9375rem;
-    margin: 0.3125rem 0.3125rem;
-    margin-top: 1.875rem;
-    box-shadow: 0.75rem 0.75rem 0.0625rem 0.0625rem #506dd4;
-  }
-
-  .location-img {
+  .img-all {
     padding-left: 10%;
     width: 90%;
-    height: 30%;
+    height: 40%;
     align-items: center;
     justify-content: center;
     object-position: 50% 50%;
   }
+ 
 }
