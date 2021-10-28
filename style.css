@@ -1,8 +1,8 @@
 html,body,*{
     font-size: 62.5%;
     box-sizing: border-box;
-    padding: 1rem;
-    margin: 1px;
+    padding: 0rem;
+    margin: 0px;
 }
 body{
     font-family: 'Abril Fatface', cursive;
@@ -43,6 +43,8 @@ body{
 .img-all{
     height: auto; 
     width: 50rem;
+    padding:2rem;
+    margin:1rem;
 }
 
 
@@ -56,6 +58,7 @@ body{
 }
 .card{
     border: solid black 6px;
+    padding-top: 2rem;
     margin-bottom: 2rem;
     background-color: cornsilk;
     text-align: center;
